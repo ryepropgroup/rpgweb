@@ -5,6 +5,7 @@ const StudentEventsContainer = styled.div`
 
 `;
 
+{/* Render components */}
 export function StudentEvents() {
     return(
         <StudentEventsContainer>

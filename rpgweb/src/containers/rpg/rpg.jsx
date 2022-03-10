@@ -5,6 +5,7 @@ const RpgContainer = styled.div`
 
 `;
 
+{/* Render components */}
 export function Rpg() {
     return (
         <RpgContainer>

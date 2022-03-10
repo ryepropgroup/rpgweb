@@ -5,6 +5,7 @@ const StudentBlogContainer = styled.div`
 
 `;
 
+{/* Render components */}
 export function StudentBlog() {
     return (
         <StudentBlogContainer>

@@ -27,6 +27,7 @@ const StartButton = styled.button`
     font-size: 1.1em;
 `;
 
+{/* Render components */}
 export function Landing() {
     return(
         <LandingContainer>

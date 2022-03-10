@@ -5,6 +5,7 @@ const StudentContactContainer = styled.div`
 
 `;
 
+{/* Render components */}
 export function StudentContact() {
     return (
         <StudentContactContainer>

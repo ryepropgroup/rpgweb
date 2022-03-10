@@ -5,6 +5,7 @@ const StudentTeamContainer = styled.div`
 
 `;
 
+{/* Render components */}
 export function StudentTeam() {
     return (
         <StudentTeamContainer>
