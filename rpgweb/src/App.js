@@ -17,11 +17,8 @@ import { Rpg } from './containers/rpg/rpg';
 
 function App() {
   return (
-    <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<App />}>
-
             {/* Routes for landing and rpg split pages */}
             <Route path='/' element={<Landing/>}/>
             <Route path='/rpg' element={<Rpg/>}/>
@@ -33,10 +30,8 @@ function App() {
             <Route path='/studentevents' element={<StudentEvents />}/>
             <Route path='/studentteam' element={<StudentTeam />}/>
             <Route path='/studentcontact' element={<StudentContact />}/>
-          </Route>
         </Routes>
       </BrowserRouter>
-    </div>
   );
 }
 
