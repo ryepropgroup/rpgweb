@@ -1,11 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import {StarPic} from '../../assets/pictures/background-image.JPG';
+
 
 const StudentTeamContainer = styled.div`
 
 `;
 
 const Background = styled.div`
+    width: 100%;
+    height: 100vh;
+    padding: 0;
 `
 const Title1 = styled.div`
     display: flex;
@@ -31,6 +36,10 @@ export function StudentTeam() {
             <Title2>
                 Paving your Way into space
             </Title2>
+
+            <Background>
+                <img src={require("../../assets/pictures/background-image.JPG")} />
+            </Background>
         </StudentTeamContainer>
     )
 };
