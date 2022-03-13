@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { DropArrow } from '../../components/arrow/arrow';
 import Picture from '../../assets/pictures/background-image.JPG';
 
 
@@ -9,8 +10,12 @@ const StudentTeamContainer = styled.div`
     height: 100vh;
 `;
 
+const StudentTeamCont2 = styled.div`
+    background-image: url(${Picture});
+`
 const Title = styled.div`
     position: relative;
+    width: 100%;
     top: 5vh;
 `
 
@@ -26,8 +31,9 @@ const Title1 = styled.div`
 `
 
 const Title2 = styled.div`
-    position: relative;
-    top: 5vh;
+    position: absolute;
+    top: 13vh;
+    left: 33vw;
     display: flex;
     margin-top: -1vh;
     justify-content: center;
@@ -39,6 +45,7 @@ const Title2 = styled.div`
 const Arrow = styled.button`
     display: flex;
     justify-content: center;
+    height: 100
 `
 
 {/* Render components */}
