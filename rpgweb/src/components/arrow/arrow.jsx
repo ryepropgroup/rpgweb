@@ -29,7 +29,7 @@ const ArrowIcon = styled.div`
     &:active {
         background-position: 100%;
         background-color: black;
-        color: white;
+        color: #F3BD11;
         transform: translateY(-1rem);
     }
 `;

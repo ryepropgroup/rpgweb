@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import { DropArrow } from '../../components/arrow/arrow';
 import Picture from '../../assets/pictures/background-image.JPG';
 
+const Teampage = styled.div`
 
+`
 const StudentTeamContainer = styled.div`
     background-image: linear-gradient(#57FFDC, black);
     width: 100%;
@@ -12,6 +14,7 @@ const StudentTeamContainer = styled.div`
 
 const StudentTeamCont2 = styled.div`
     background-image: url(${Picture});
+    height: 100vh;
 `
 const Title = styled.div`
     position: relative;
@@ -42,27 +45,34 @@ const Title2 = styled.div`
     font-family: poppins;
     font-size: 5em;
 `
-const Arrow = styled.button`
+const Arrow = styled.div`
+    position: absolute;
+    top: 75vh;
+    right: 50vw;
     display: flex;
     justify-content: center;
-    height: 100
+
 `
 
 {/* Render components */}
 export function StudentTeam() {
-
-
     return (
-        <StudentTeamContainer>
-           <Title>
-               <Title1 >
-                A Curated Team
-                </Title1>
-                <Title2>
-                Paving your Way into space
-                </Title2>
-            </Title>
-            
-        </StudentTeamContainer>
+        <Teampage> 
+            <StudentTeamContainer>
+                <Title>
+                    <Title1>
+                        A Curated Team
+                    </Title1>
+                    <Title2>
+                        Paving your Way into space
+                    </Title2>
+                    <Arrow>
+                        <DropArrow/>
+                    </Arrow>
+                </Title>
+            </StudentTeamContainer>
+            <StudentTeamCont2>
+            </StudentTeamCont2>
+        </Teampage>
     )
 };
