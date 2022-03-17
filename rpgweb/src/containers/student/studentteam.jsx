@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { DropArrow } from '../../components/arrow/arrow';
 import Picture from '../../assets/pictures/background-image.JPG';
 import { motion } from 'framer-motion';
+import { Element, scroller} from 'react-scroll';
 
 const Teampage = styled.div`
 
@@ -66,7 +67,7 @@ const Title2 = styled.div`
     font-family: poppins;
     font-size: 5em;
 `
-const Arrow = styled.div`
+const Arrow = styled(Element)`
     position: absolute;
     top: 75vh;
     right: 50vw;
@@ -75,12 +76,18 @@ const Arrow = styled.div`
 
 `
 const LeadCard = styled(motion.div)`
+
 `
 const TeamCard = styled(motion.div)`
-    
+
 `
 {/* Render components */}
 export function StudentTeam() {
+
+    const scrollNext = () => {
+        scroller.scrollTo("teamcards", {smooth: true, duration: 1450});
+    }
+
     return (
         <Teampage> 
             <StudentTeamContainer>
@@ -97,12 +104,14 @@ export function StudentTeam() {
                     <Title2>
                         Paving your Way into space
                     </Title2>
-                    <Arrow>
+                    <Arrow onClick = {scrollNext}>
                         <DropArrow/>
                     </Arrow>
                 </Title>
             </StudentTeamContainer>
-            <StudentTeamCont2>
+            <StudentTeamCont2 name="teamcards">
+                <LeadCard>
+                </LeadCard>
             </StudentTeamCont2>
         </Teampage>
     )
