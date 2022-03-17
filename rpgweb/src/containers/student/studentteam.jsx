@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { DropArrow } from '../../components/arrow/arrow';
 import Picture from '../../assets/pictures/background-image.JPG';
+import { motion } from 'framer-motion';
 
 const Teampage = styled.div`
 
@@ -22,9 +23,29 @@ const Title = styled.div`
     top: 5vh;
 `
 
-const Title1 = styled.div`
-    position: relative;
-    right: 10vw;
+const TitleA = styled(motion.div)`
+    position: absolute;
+    left: 23.5vw;
+    top: 6vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 5em;
+    font-family: poppins;
+`
+const TitleCurated = styled(motion.div)`
+    position: absolute;
+    left: 26.5vw;
+    top: 6vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 5em;
+    font-family: poppins;
+`
+const TitleTeam = styled(motion.div)`
+    position: absolute;
+    left: 40vw;
     top: 6vh;
     display: flex;
     justify-content: center;
@@ -53,16 +74,26 @@ const Arrow = styled.div`
     justify-content: center;
 
 `
-
+const LeadCard = styled(motion.div)`
+`
+const TeamCard = styled(motion.div)`
+    
+`
 {/* Render components */}
 export function StudentTeam() {
     return (
         <Teampage> 
             <StudentTeamContainer>
                 <Title>
-                    <Title1>
-                        A Curated Team
-                    </Title1>
+                    <TitleA>
+                        A
+                    </TitleA>
+                    <TitleCurated>
+                        Curated
+                    </TitleCurated>
+                    <TitleTeam>
+                        Team
+                    </TitleTeam>
                     <Title2>
                         Paving your Way into space
                     </Title2>
