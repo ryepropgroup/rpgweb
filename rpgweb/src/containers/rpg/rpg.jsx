@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import StudentButtonImage from '../../assets/choice-page/student.jpg';
 import SponsorButtonImage from '../../assets/choice-page/sponsor.jpg';
 import TeamButtonImage from '../../assets/choice-page/team.jpg';
@@ -141,17 +141,23 @@ export function Rpg() {
         <RpgContainer>
             <Student>
                 <StudentButtonContainer>
-                    <StudentButton>I am a Student</StudentButton>
+                    <Link to="/studenthome">
+                        <StudentButton>I am a Student</StudentButton>
+                    </Link>
                 </StudentButtonContainer>
             </Student>
             <Team>
                 <TeamButtonContainer>
-                    <TeamButton>I am a Team Member</TeamButton>
+                    <Link to="/teamhome">
+                        <TeamButton>I am a Team Member</TeamButton>
+                    </Link>
                 </TeamButtonContainer>
             </Team>
             <Sponsor>
                 <SponsorButtonContainer>
-                    <SponsorButton>I am a Sponsor</SponsorButton>
+                    <Link to="/sponsorhome">
+                        <SponsorButton>I am a Sponsor</SponsorButton>
+                    </Link>
                 </SponsorButtonContainer>
             </Sponsor>
         </RpgContainer>
