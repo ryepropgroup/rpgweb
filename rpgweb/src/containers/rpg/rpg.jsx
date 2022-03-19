@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import StudentButtonImage from '../../assets/choice-page/student.jpg';
 import SponsorButtonImage from '../../assets/choice-page/sponsor.jpg';
 import TeamButtonImage from '../../assets/choice-page/team.jpg';

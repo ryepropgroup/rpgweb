@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import Backpic from '../../assets/pictures/background-image.JPG';
+import { StudentMenu } from '../../components/studentmenu/stumenu';
 
 const StudentHomeContainer = styled.div`
     height: 100vh;
@@ -24,6 +25,7 @@ const FuelingFuture = styled(motion.div)`
 export function StudentHome() {
     return (
         <StudentHomeContainer>
+            <StudentMenu />
             <FuelingFuture>
                 Fueling Our Future
             </FuelingFuture>

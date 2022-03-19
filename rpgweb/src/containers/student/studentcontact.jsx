@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import BackPic from '../../assets/pictures/background-image.JPG';
+import { StudentMenu } from '../../components/studentmenu/stumenu';
 
 const StudentContactContainer = styled.div`
     height: 100vh;
@@ -113,7 +114,7 @@ const Form = styled.div `
 export function StudentContact() {
     return (
         <StudentContactContainer>
-
+            <StudentMenu/>
             <JoinUs>
                 <Title1>
                     Interested In Our Work?

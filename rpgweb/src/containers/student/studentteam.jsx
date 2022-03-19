@@ -4,6 +4,7 @@ import { DropArrow } from '../../components/arrow/arrow';
 import Picture from '../../assets/pictures/background-image.JPG';
 import { motion } from 'framer-motion';
 import { Element, scroller} from 'react-scroll';
+import { StudentMenu } from '../../components/studentmenu/stumenu';
 
 const Teampage = styled.div`
 
@@ -89,8 +90,9 @@ export function StudentTeam() {
     }
 
     return (
-        <Teampage> 
+        <Teampage>
             <StudentTeamContainer>
+                <StudentMenu/>
                 <Title>
                     <TitleA>
                         A
