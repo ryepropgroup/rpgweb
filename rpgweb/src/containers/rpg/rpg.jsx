@@ -79,7 +79,6 @@ const TeamButton = styled(motion.button)`
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
-    text-decoration: none;
 
     background-image: linear-gradient(
         120deg,
@@ -95,6 +94,7 @@ const TeamButton = styled(motion.button)`
         background-position: 100%;
         color: black; // Font color turns into background color
         transform: translateX(1rem);
+        text-decoration: none;
     }
 `
 const SponsorButtonContainer = styled.div`
@@ -141,7 +141,9 @@ export function Rpg() {
         <RpgContainer>
             <Student>
                 <StudentButtonContainer>
-                    <StudentButton>I am a Student</StudentButton>
+                    <Link to="/studenthome">
+                        <StudentButton>I am a Student</StudentButton>
+                    </Link>
                 </StudentButtonContainer>
             </Student>
             <Team>

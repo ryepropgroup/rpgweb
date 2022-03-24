@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
 import LandingBack from '../../assets/landing-page/rpg-landing-desktop.jpg';
+import Logo from '../../assets/animated-logo/mainlogo.svg';
 
 const LandingContainer = styled.div`
     display: flex;
@@ -12,6 +13,17 @@ const LandingContainer = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
 `;
+
+const Logocontainer = styled.div`
+    position: absolute;
+    left: 34vw;
+    top: 15vh;
+`
+
+const RPGlogo = styled(motion.div)`
+    display: flex;
+    height: 40em;
+`
 
 const ButtonContainer = styled(motion.div)`
     display: flex;
@@ -43,6 +55,12 @@ const StartButton = styled(motion.button)`
 export function Landing() {
     return(
         <LandingContainer>
+            <Logocontainer>
+                <RPGlogo>
+                    <img src={Logo} />
+                </RPGlogo>
+            </Logocontainer>
+            
             <ButtonContainer>
                 <Link to="/rpg">
                     <StartButton
