@@ -5,6 +5,7 @@ import Picture from '../../assets/pictures/background-image.JPG';
 import { motion } from 'framer-motion';
 import { Element, scroller} from 'react-scroll';
 import { StudentMenu } from '../../components/studentmenu/stumenu';
+import Umar from '../../assets/team-photos/umar-shabbir.jpg';
 
 const Teampage = styled.div`
 
@@ -105,10 +106,17 @@ const Arrow = styled(Element)`
         top: 58vh;
         right: 40vw;
     }
-
 `
-const LeadCard = styled(motion.div)`
 
+const LeadCard = styled(motion.div)`
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+
+    .umar-pic {
+        height: 400px;
+        width: 600px;
+    }
 `
 const TeamCard = styled(motion.div)`
 
@@ -144,6 +152,7 @@ export function StudentTeam() {
             </StudentTeamContainer>
             <StudentTeamCont2 name="teamcards">
                 <LeadCard>
+                    <img className="umar-pic" src={Umar} />
                 </LeadCard>
             </StudentTeamCont2>
         </Teampage>
