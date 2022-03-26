@@ -10,8 +10,8 @@ const NavContainer = styled.div`
 
 // Nav Colors
 const NavColors = {
-    NavDark: "#5D6D7E",
-    navLight: "#D6DBDF",
+    NavDark: "#57FFDC",
+    navLight: "#57FFDC",
 };
 
 // Hamburger icon circle
@@ -43,12 +43,12 @@ const NavBackground = styled.div`
         ${NavColors.NavDark},
         ${NavColors.navLight}
     );
-    top: 0.5em;
-    right: 0.5em;
-    width: 4.3em;
-    height: 4.3em;
+    top: 20em;
+    right: -10em;
+    width: 1em;
+    height: 1em;
     z-index: 600;
-    border-radius: 50%;
+    border-radius: 10%;
     margin: 3.4vh 2.5vw 0px 0px;
     transform: ${props => props.clicked? "scale(80)":"scale(0)"};
     transition: transform 0.9s;
@@ -116,7 +116,7 @@ const List = styled.ul`
     position: absolute;
     list-style: none;
     top: 50%;
-    left: 47%;
+    left: 81.5%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
@@ -129,14 +129,14 @@ const NavList = styled(Link)`
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-decoration: none;
-    color: ${NavColors.navLight};
+    color: black;
     padding: 1rem 2rem;
     // Hover animation for list item
     background-image: linear-gradient(
         120deg,
         transparent 0%,
         transparent 50%,
-        #fff 50%
+        #000 50%
     );
     background-size: 240%;
     transition: all 0.4s;
