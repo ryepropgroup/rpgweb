@@ -23,6 +23,11 @@ const Title = styled.div`
     position: relative;
     width: 100%;
     top: 5vh;
+
+    @media (min-width: 1200px) {
+        top: 1vh;
+        right: 7vw;
+    }
 `
 
 const TitleA = styled(motion.div)`
@@ -34,6 +39,11 @@ const TitleA = styled(motion.div)`
     color: white;
     font-size: 5em;
     font-family: poppins;
+
+    @media (min-width: 1200px) {
+        font-size: 3em;
+        left: 20vw;
+    }
 `
 const TitleCurated = styled(motion.div)`
     position: absolute;
@@ -44,6 +54,11 @@ const TitleCurated = styled(motion.div)`
     color: white;
     font-size: 5em;
     font-family: poppins;
+
+    @media (min-width: 1200px) {
+        font-size: 3em; 
+        left: 23.5vw;
+    }
 `
 const TitleTeam = styled(motion.div)`
     position: absolute;
@@ -54,6 +69,11 @@ const TitleTeam = styled(motion.div)`
     color: white;
     font-size: 5em;
     font-family: poppins;
+
+    @media (min-width: 1200px) {
+        font-size: 3em;
+        left: 40vw;
+    }
 `
 
 const Title2 = styled.div`
@@ -67,6 +87,12 @@ const Title2 = styled.div`
     font-weight: bold;
     font-family: poppins;
     font-size: 5em;
+    
+    @media (min-width: 1200px) {
+        font-size: 4em;
+        left: 27vw;
+        top: 16vh;
+    }
 `
 const Arrow = styled(Element)`
     position: absolute;
@@ -74,6 +100,11 @@ const Arrow = styled(Element)`
     right: 50vw;
     display: flex;
     justify-content: center;
+
+    @media (min-width: 1200px) {
+        top: 58vh;
+        right: 40vw;
+    }
 
 `
 const LeadCard = styled(motion.div)`
