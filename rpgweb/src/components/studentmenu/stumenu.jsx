@@ -119,7 +119,7 @@ const List = styled.ul`
     left: 81.5%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 100%;
+    width: 240%;
 `;
 
 // Styling "Link" from react-router-dom acting as list item
