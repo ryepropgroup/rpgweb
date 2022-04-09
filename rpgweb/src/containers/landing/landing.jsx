@@ -22,9 +22,9 @@ const Logocontainer = styled.div`
 
 const RPGlogo = styled(motion.div)`
     display: flex;
-    height: 20em;
-    @media (min-width: 1200px) {
-        height: 40em; 
+    height: 40em;
+    @media (max-width: 1200px) {
+        height: 20em; 
     }
 `
 
