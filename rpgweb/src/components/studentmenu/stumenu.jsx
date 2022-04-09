@@ -52,6 +52,11 @@ const NavBackground = styled.div`
     margin: 3.4vh 2.5vw 0px 0px;
     transform: ${props => props.clicked? "scale(80)":"scale(0)"};
     transition: transform 0.9s;
+
+    @media (min-width: 1600px) {
+        top: 37em;
+        height: 2em;
+    }
 `;
 
 // Hamburger icon w/ animations
@@ -120,6 +125,10 @@ const List = styled.ul`
     transform: translate(-50%, -50%);
     text-align: center;
     width: 240%;
+
+    @media (min-width: 1600px) {
+        left: 88.2%;
+    }
 `;
 
 // Styling "Link" from react-router-dom acting as list item
