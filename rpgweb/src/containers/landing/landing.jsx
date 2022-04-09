@@ -22,10 +22,14 @@ const Logocontainer = styled.div`
 
 const RPGlogo = styled(motion.div)`
     display: flex;
-    height: 40em;
-    @media (max-width: 1200px) {
+    @media (min-width: 1200px) {
         height: 20em; 
     }
+
+    @media (min-width: 1600px) {
+        height: 40em;
+    }
+
 `
 
 const ButtonContainer = styled(motion.div)`
