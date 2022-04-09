@@ -2,46 +2,45 @@ import React from 'react';
 import styled from 'styled-components';
 import { StudentMenu } from '../../components/studentmenu/stumenu';
 import BackPic from '../../assets/pictures/background-image.JPG';
-
-import TeamPic from '../../assets/team-photos/teamPhoto.JPG';
+import Team from '../../assets/team-photos/teamPhoto.JPG';
 
 const StudentAboutContainer = styled.div`
-    height: 100vh;
+    height: 500vh;
     background-image: url(${BackPic});
 `;
 
 const TeamPicture = styled.div`
-    background-image: url(${TeamPic});
-    background-size: cover;
-    height: 600px;
-    width: 1068px;
-    
-    
-    position: absolute;
-    top: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 55vh;
 
-    left: 24vw;
-
+    .teamPic {
+        height: 600px;
+        width: 1050px;
+        border-radius: 5% / 10%;
+    }
 `;
 
 const OurMilestones = styled.div`
     position: absolute;
-    top: 10vh;
+    top: 25vh;
     left: 7vw;
-    
     background-image: -webkit-linear-gradient(#57FFDC, #F3BD11);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 3.6em;
 `;
 
 const WeStriveToLead = styled.div`
-    position: absolute;
-    top: 50vh;
-    left: 30vw;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 65vh;
     
     background-image: -webkit-linear-gradient(#57FFDC, #F3BD11);
     -webkit-background-clip: text;
@@ -59,8 +58,19 @@ const Heading1 = styled.div`
 
     position: absolute;
     font-size: 25px;
-    margin-left: 9vw;
-    margin-top: 10vh;
+    margin-left: 7.5vw;
+    margin-top: 28vh;
+`;
+
+const EngInfo = styled.div`
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.7em;
+    margin: 80vh 0 0 8vw;
 `;
 
 {/* Render components */}
@@ -69,24 +79,30 @@ export function StudentAbout() {
         <StudentAboutContainer>
             <StudentMenu/>
 
-            <OurMilestones>
-                Our Milestones
-            </OurMilestones>
+                <OurMilestones>
+                    Our Milestones
+                </OurMilestones>
 
 
-            <Heading1>
-                At RPG We've established {"\n"}
-                A Community Of Driven {"\n"}
-                Students
-            </Heading1>
+                <Heading1>
+                    At RPG We've established<br/>
+                    A Community Of Driven<br/>
+                    Students
+                </Heading1>
 
-            <TeamPicture>
-
-            </TeamPicture>
+                <TeamPicture>
+                    <img className="teamPic" src={Team}/>
+                </TeamPicture>
 
             <WeStriveToLead>
                 We Strive To Lead Innovation
             </WeStriveToLead>
+
+            <EngInfo>
+                Applied Systems Engineering To Real-World Design.<br/><br/>
+                Explored New Uses For Additive Manufacturing<br/><br/>
+                Produced A Rocket Engine Design, <br/> Ready For Implementation!
+            </EngInfo>
             
         </StudentAboutContainer>
     )
