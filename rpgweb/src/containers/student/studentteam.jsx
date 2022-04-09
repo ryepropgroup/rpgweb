@@ -29,12 +29,14 @@ const Title = styled.div`
         top: 1vh;
         right: 7vw;
     }
+
+    @media (min-width: 1600px) {
+        
+    }
 `
 
 const TitleA = styled(motion.div)`
     position: absolute;
-    left: 23.5vw;
-    top: 6vh;
     display: flex;
     justify-content: center;
     color: white;
@@ -45,11 +47,15 @@ const TitleA = styled(motion.div)`
         font-size: 3em;
         left: 20vw;
     }
+
+    @media (min-width: 1600px) {
+        font-size: 5em;
+        left: 32vw;
+        top: 8vh;
+    }
 `
 const TitleCurated = styled(motion.div)`
     position: absolute;
-    left: 26.5vw;
-    top: 6vh;
     display: flex;
     justify-content: center;
     color: white;
@@ -60,11 +66,15 @@ const TitleCurated = styled(motion.div)`
         font-size: 3em; 
         left: 23.5vw;
     }
+
+    @media (min-width: 1600px) {
+        left: 35vw;
+        top: 8vh;
+        font-size: 5em;
+    }
 `
 const TitleTeam = styled(motion.div)`
     position: absolute;
-    left: 40vw;
-    top: 6vh;
     display: flex;
     justify-content: center;
     color: white;
@@ -75,24 +85,33 @@ const TitleTeam = styled(motion.div)`
         font-size: 3em;
         left: 40vw;
     }
+
+    @media (min-width: 1600px) {
+        left: 49vw;
+        top: 8vh;
+        font-size: 5em;
+    }
 `
 
 const Title2 = styled.div`
     position: absolute;
-    top: 13vh;
-    left: 33vw;
     display: flex;
     margin-top: -1vh;
     justify-content: center;
     color: #F3BD11;
     font-weight: bold;
     font-family: poppins;
-    font-size: 5em;
-    
+
     @media (min-width: 1200px) {
         font-size: 4em;
         left: 27vw;
         top: 16vh;
+    }
+
+    @media (min-width: 1600px) {
+        font-size: 5em;
+        top: 17vh;
+        left: 44vw;
     }
 `
 const Arrow = styled(Element)`
@@ -103,7 +122,7 @@ const Arrow = styled(Element)`
     justify-content: center;
 
     @media (min-width: 1200px) {
-        top: 58vh;
+        top: 73vh;
         right: 40vw;
     }
 `
