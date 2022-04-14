@@ -4,6 +4,8 @@ import { StudentMenu } from '../../components/studentmenu/stumenu';
 import BackPic from '../../assets/pictures/background-image.JPG';
 import Team from '../../assets/team-photos/teamPhoto.JPG';
 
+import logo1 from '../../assets/sponsor-logos/ansys.png.png';
+
 const StudentAboutContainer = styled.div`
     height: 500vh;
     background-image: url(${BackPic});
@@ -45,6 +47,60 @@ const WeStriveToLead = styled.div`
     background-image: -webkit-linear-gradient(#57FFDC, #F3BD11);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 3.6em;
+`;
+
+const OurSponsors = styled.div`
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 15vh;
+    
+    background-image: -webkit-linear-gradient(#57FFDC, #F3BD11);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 3.6em;
+`;
+/*
+position: relative;
+justify-content: center;
+align-items: center;
+text-align: center;
+top: 15vh;
+*/
+const SponsorPics = styled.div`
+    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 15vh;
+
+    .flex-container{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .flex-container > div {
+        width: 400px;
+        margin: 50px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+
+    .ab1{
+        width: 350px;
+    }
+
+    color: white;
 
     font-family: poppins;
     font-weight: bold;
@@ -103,7 +159,47 @@ export function StudentAbout() {
                 Explored New Uses For Additive Manufacturing<br/><br/>
                 Produced A Rocket Engine Design, <br/> Ready For Implementation!
             </EngInfo>
-            
+
+            <OurSponsors>
+                Our Sponsors
+            </OurSponsors>
+
+            <SponsorPics>
+                <div class="flex-container">
+                    <div>
+                        <img class="ab1" alt="baa"  src={logo1}/>
+                    </div>
+                    <div>
+                        <img class="ab1" alt="baa"  src={logo1}/>
+                    </div>
+                    <div>
+                        <img class="ab1" alt="baa"  src={logo1}/>
+                    </div>  
+                </div>
+                <div class="flex-container">
+                    <div>
+                        <img class="ab1" alt="baa"  src={logo1}/>
+                    </div>  
+                    <div>
+                        <img class="ab1" alt="baa"  src={logo1}/>
+                    </div>  
+                    <div>
+                        <img class="ab1" alt="baa"  src={logo1}/>
+                    </div>  
+                </div>
+                <div class="flex-container">
+                    <div>
+                        <img class="ab1" alt="baa"  src={logo1}/>
+                    </div>  
+                    <div>
+                        <img class="ab1" alt="baa"  src={logo1}/>
+                    </div>  
+                    <div>
+                        <img class="ab1" alt="baa"  src={logo1}/>
+                    </div>  
+                </div>
+            </SponsorPics>
+
         </StudentAboutContainer>
     )
 };
