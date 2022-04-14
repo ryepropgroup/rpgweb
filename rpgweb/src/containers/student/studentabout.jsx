@@ -4,7 +4,15 @@ import { StudentMenu } from '../../components/studentmenu/stumenu';
 import BackPic from '../../assets/pictures/background-image.JPG';
 import Team from '../../assets/team-photos/teamPhoto.JPG';
 
-import logo1 from '../../assets/sponsor-logos/ansys.png.png';
+import ansys_logo from '../../assets/sponsor-logos/ansys.png.png';
+import glenair_logo from '../../assets/sponsor-logos/glenair.jpg.jpg';
+import RESS_logo from '../../assets/sponsor-logos/RESS.png';
+import ryerson_logo from '../../assets/sponsor-logos/ryelogo.svg.png';
+import stein_logo from '../../assets/sponsor-logos/stein.jpg.jpg';
+import solid_logo from '../../assets/sponsor-logos/solid.png.png';
+import swage_logo from '../../assets/sponsor-logos/swage.png.png';
+import textreme_logo from '../../assets/sponsor-logos/textreme.png.png';
+
 
 const StudentAboutContainer = styled.div`
     height: 500vh;
@@ -89,11 +97,11 @@ const SponsorPics = styled.div`
     }
 
     .flex-container > div {
-        width: 400px;
         margin: 50px;
-        text-align: center;
-        line-height: 75px;
-        font-size: 30px;
+        height: 200px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
     }
 
     .ab1{
@@ -167,35 +175,35 @@ export function StudentAbout() {
             <SponsorPics>
                 <div class="flex-container">
                     <div>
-                        <img class="ab1" alt="baa"  src={logo1}/>
+                        <img class="ab1" alt="baa"  src={RESS_logo}/>
                     </div>
                     <div>
-                        <img class="ab1" alt="baa"  src={logo1}/>
+                        <img class="ab1" alt="baa"  src={stein_logo}/>
                     </div>
                     <div>
-                        <img class="ab1" alt="baa"  src={logo1}/>
+                        <img class="ab1" alt="baa"  src={swage_logo}/>
                     </div>  
                 </div>
                 <div class="flex-container">
                     <div>
-                        <img class="ab1" alt="baa"  src={logo1}/>
+                        <img class="ab1" alt="baa"  src={solid_logo}/>
                     </div>  
                     <div>
-                        <img class="ab1" alt="baa"  src={logo1}/>
+                        <img class="ab1" alt="baa"  src={glenair_logo}/>
                     </div>  
                     <div>
-                        <img class="ab1" alt="baa"  src={logo1}/>
+                        <img class="ab1" alt="baa"  src={ansys_logo}/>
                     </div>  
                 </div>
                 <div class="flex-container">
                     <div>
-                        <img class="ab1" alt="baa"  src={logo1}/>
+                        <img class="ab1" alt="baa"  src={ryerson_logo}/>
                     </div>  
                     <div>
-                        <img class="ab1" alt="baa"  src={logo1}/>
+                        <img class="ab1" alt="baa"  src={textreme_logo}/>
                     </div>  
                     <div>
-                        <img class="ab1" alt="baa"  src={logo1}/>
+                        <img class="ab1" alt="baa"  src={ansys_logo}/>
                     </div>  
                 </div>
             </SponsorPics>
