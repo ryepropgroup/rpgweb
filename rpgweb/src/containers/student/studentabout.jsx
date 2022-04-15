@@ -4,6 +4,16 @@ import { StudentMenu } from '../../components/studentmenu/stumenu';
 import BackPic from '../../assets/pictures/background-image.JPG';
 import Team from '../../assets/team-photos/teamPhoto.JPG';
 
+import ansys_logo from '../../assets/sponsor-logos/ansys.png.png';
+import glenair_logo from '../../assets/sponsor-logos/glenair.jpg.jpg';
+import RESS_logo from '../../assets/sponsor-logos/RESS.png';
+import ryerson_logo from '../../assets/sponsor-logos/ryelogo.svg.png';
+import stein_logo from '../../assets/sponsor-logos/stein.jpg.jpg';
+import solid_logo from '../../assets/sponsor-logos/solid.png.png';
+import swage_logo from '../../assets/sponsor-logos/swage.png.png';
+import textreme_logo from '../../assets/sponsor-logos/textreme.png.png';
+
+
 const StudentAboutContainer = styled.div`
     height: 500vh;
     background-image: url(${BackPic});
@@ -45,6 +55,60 @@ const WeStriveToLead = styled.div`
     background-image: -webkit-linear-gradient(#57FFDC, #F3BD11);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 3.6em;
+`;
+
+const OurSponsors = styled.div`
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 15vh;
+    
+    background-image: -webkit-linear-gradient(#57FFDC, #F3BD11);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 3.6em;
+`;
+/*
+position: relative;
+justify-content: center;
+align-items: center;
+text-align: center;
+top: 15vh;
+*/
+const SponsorPics = styled.div`
+    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 15vh;
+
+    .flex-container{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .flex-container > div {
+        margin: 50px;
+        height: 200px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ab1{
+        width: 350px;
+    }
+
+    color: white;
 
     font-family: poppins;
     font-weight: bold;
@@ -103,7 +167,47 @@ export function StudentAbout() {
                 Explored New Uses For Additive Manufacturing<br/><br/>
                 Produced A Rocket Engine Design, <br/> Ready For Implementation!
             </EngInfo>
-            
+
+            <OurSponsors>
+                Our Sponsors
+            </OurSponsors>
+
+            <SponsorPics>
+                <div class="flex-container">
+                    <div>
+                        <img class="ab1" alt="baa"  src={RESS_logo}/>
+                    </div>
+                    <div>
+                        <img class="ab1" alt="baa"  src={stein_logo}/>
+                    </div>
+                    <div>
+                        <img class="ab1" alt="baa"  src={swage_logo}/>
+                    </div>  
+                </div>
+                <div class="flex-container">
+                    <div>
+                        <img class="ab1" alt="baa"  src={solid_logo}/>
+                    </div>  
+                    <div>
+                        <img class="ab1" alt="baa"  src={glenair_logo}/>
+                    </div>  
+                    <div>
+                        <img class="ab1" alt="baa"  src={ansys_logo}/>
+                    </div>  
+                </div>
+                <div class="flex-container">
+                    <div>
+                        <img class="ab1" alt="baa"  src={ryerson_logo}/>
+                    </div>  
+                    <div>
+                        <img class="ab1" alt="baa"  src={textreme_logo}/>
+                    </div>  
+                    <div>
+                        <img class="ab1" alt="baa"  src={ansys_logo}/>
+                    </div>  
+                </div>
+            </SponsorPics>
+
         </StudentAboutContainer>
     )
 };
