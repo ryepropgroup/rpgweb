@@ -113,6 +113,10 @@ const SponsorPics = styled.div`
     font-family: poppins;
     font-weight: bold;
     font-size: 3.6em;
+
+    left: 50%;
+    width: 1200px;
+    transform: translateX(-600px);
 `;
 
 const Heading1 = styled.div`
@@ -201,9 +205,6 @@ export function StudentAbout() {
                     </div>  
                     <div>
                         <img class="ab1" alt="baa"  src={textreme_logo}/>
-                    </div>  
-                    <div>
-                        <img class="ab1" alt="baa"  src={ansys_logo}/>
                     </div>  
                 </div>
             </SponsorPics>
